@@ -54,7 +54,7 @@ def createCardanoMetadata(name, Order_Num, NFT_DNA, NFT_Variants, Material_Attri
 def createSolanaMetaData(name, Order_Num, NFT_DNA, NFT_Variants, Material_Attributes, custom_Fields, enableCustomFields,
                          solana_description, solanaMetadataPath):
     metaDataDictSolana = {"name": name.replace('_', ' #'), "symbol": "MFB", "description": "Metafigz Body is the second part of Metafigz Citizen. Create your own character to form a new city and get staking rewards.", "seller_fee_basis_points": 1000,
-                          "image": f"{Order_Num}.png", "animation_url": "", "external_url": "https://metafigz.com"}
+                          "image": f"{Order_Num}.png", "external_url": "https://metafigz.com"}
 
     attributes = []
 
