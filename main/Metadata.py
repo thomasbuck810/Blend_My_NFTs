@@ -54,7 +54,7 @@ def createCardanoMetadata(name, Order_Num, NFT_DNA, NFT_Variants, Material_Attri
 def createSolanaMetaData(name, Order_Num, NFT_DNA, NFT_Variants, Material_Attributes, custom_Fields, enableCustomFields,
                          solana_description, solanaMetadataPath):
     metaDataDictSolana = {"name": name, "symbol": "MFB", "description": solana_description, "seller_fee_basis_points": 1000,
-                          "image": "", "animation_url": "", "external_url": "https://metafigz.com"}
+                          "image": f"{Order_Num}.png", "animation_url": "", "external_url": "https://metafigz.com"}
 
     attributes = []
 
@@ -90,7 +90,7 @@ def createSolanaMetaData(name, Order_Num, NFT_DNA, NFT_Variants, Material_Attrib
     }
 
     metaDataDictSolana["properties"] = {
-        "files": [{"uri": "", "type": "image/png"}],
+        "files": [{"uri": f"{Order_Num}.png", "type": "image/png"}],
         "category": "image",
         "creators": [{"address": "BU8pQqwFNYWe73Tnzd7XNw4QyqnPd3pudYPrmePBYzfn", "share": 100}]
     }
